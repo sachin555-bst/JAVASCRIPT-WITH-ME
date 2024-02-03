@@ -61,7 +61,8 @@ let num1, num2, num3
 num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 100
-++gameCounter;
+// gameCounter++;       //the increment operator increments and returns the value before incrementing.
+++gameCounter;          //the increment operator increments and returns the value after incrementing.
 console.log(gameCounter);
 
 // link to study
