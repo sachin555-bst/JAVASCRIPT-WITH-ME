@@ -5,7 +5,7 @@ const repoCount = 50
 
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);  //this is imp
 
-const gameName = new String('sachin-hc-com')
+const gameName = new String('sachin-hc-com')  //string declaration 
 
 // console.log(gameName[0]);
 // console.log(gameName.__proto__);
