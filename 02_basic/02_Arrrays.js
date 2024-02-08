@@ -9,7 +9,7 @@
 // console.log(all_heroes)
 
 // +++++++++++++++--spread--++++++++++
-const all_heroes = [...marvel_heros,...dc_heroes]  // this will contact any number of arrays to give new array
+const all_heroes = [...marvel_heros,...dc_heroes]  // this will concat any number of arrays to give new array
 // console.log(all_heroes) 
 
 const new_Array = [1,2,4,[5,6,7],8,[9,10,[11,12]]]

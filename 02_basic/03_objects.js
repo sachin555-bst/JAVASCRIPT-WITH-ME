@@ -23,7 +23,7 @@ const JsUser = {                         //creating object
 // console.log(JsUser[mySym])
 
 JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)            //unmuting the object
+// Object.freeze(JsUser)            //muting the object
 JsUser.email = "hitesh@microsoft.com"
 // console.log(JsUser);
 
