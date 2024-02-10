@@ -9,7 +9,7 @@ const newobj ={
 
 // console.log(newobj.mail)  //old method
 
-const {mail}= newobj    //destructing method or
+const {mail}= newobj    //destructing method 
 //console.log(mail)
 const {mail :m} = newobj
 //console.log(m)
