@@ -25,7 +25,7 @@ const user ={
 
 function root(){
     let username ="sachin"
-    //console.log(this.username)
+  //  console.log(this.username)  //undefined
 }
 root()
 
