@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js with me</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+
+</body>
+<script>
+    const sayname = function(str){
+        console.log(str,Date.now())
+    }
+let intervalid;              //interval id is declared outside the start and stop scope so both can access
+    document.querySelector('#start').addEventListener('click',function(){
+    intervalid =  setInterval(sayname,2000, "sachin")
+    console.log("Started")
+    })
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(intervalid);
+        console.log("Stopped")
+    })
+
+    
+
+</script>
+</html>
