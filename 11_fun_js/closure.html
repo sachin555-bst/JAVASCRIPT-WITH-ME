@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure</title>
+  </head>
+  <body>
+    <button id="green">Green</button>
+    <button id="red">Red</button>
+  </body>
+
+  <script>
+
+    // function outer() {
+    //   let username = "SAchin";
+    //   console.log("OUTER", username);
+    //   function innner() {
+    //     let secret = "123df";
+    //     console.log("INNER", username);
+    //   }
+    //   function innertwo() {
+    //     console.log("innertwo", username);
+    //     //  console.log(secret)
+    //   }
+    //   innner();
+    //   innertwo();
+    // }
+    // outer();
+
+    //console.log("TOO OUTER", username);
+
+
+    // function makeFunc() {
+    //     const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+  </script>
+
+
+
+  <script>
+  // document.getElementById("red").onclick = function(){
+        //     document.body.style.backgroundColor = `red`
+        // }
+        // document.getElementById("green").onclick = function(){
+        //     document.body.style.backgroundColor = `green`
+        // }
+
+        function clickHandler(color){
+            // document.body.style.backgroundColor = `${color}`  
+
+            return function(){
+                document.body.style.backgroundColor = `${color}`
+            }
+        }
+
+        document.getElementById('red').onclick = clickHandler("red")
+        document.getElementById('green').onclick = clickHandler("green")
+  </script>
+</html>
